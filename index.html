@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Orleans Setup Helper - Generate a Random Board State">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Orleans Setup Helper</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<center><img src="img/header.png"></center>
+			<center><h1>Setup Helper</h1></center>
+		</header>
+		<main>
+			<h2><u>Description</u></h2>
+			<p>This page will give you a randomized setup based on your player count.</p>
+			
+			<center><div>
+			  <button onmouseover='style="color:teal"'; onmouseout='style="color:white"'; onclick="getRemoved(1)">2 Players</button>
+			  <button onmouseover='style="color:teal"'; onmouseout='style="color:white"'; onclick="getRemoved(2)">3 Players</button>
+			  <button onmouseover='style="color:teal"'; onmouseout='style="color:white"'; onclick="getRemoved(0)">4 Players</button><br><br>
+			</div></center>
+			
+			<h3>Remove the following character tiles from the game:</h3>
+			<span class="goods_grid">
+				<div class="container"><img src="img/farmers.png" alt="Farmers"><center><div class="charTile"></div></center></div>
+				<div class="container"><img src="img/craftsmen.png" alt="Craftsmen"><center><div class="charTile"></div></center></div>
+				<div class="container"><img src="img/traders.png" alt="Traders"><center><div class="charTile"></div></center></div>
+				<div class="container"><img src="img/boatmen.png" alt="Boatmen"><center><div class="charTile"></div></center></div>
+				<div class="container"><img src="img/knights.png" alt="Knights"><center><div class="charTile2"></div></center></div>
+				<div class="container"><img src="img/scholars.png" alt="Scholars"><center><div class="charTile2"></div></center></div>
+				<div class="container"><img src="img/monks.png" alt="Monks"><center><div class="charTile2"></div></center></div>
+			</span>
+
+			<h3>Remove the following goods from the game:</h3>
+			<span class="goods_grid">
+				<div class="container"><img src="img/wheat.png" alt="Wheat" style="border-radius:12px"><center><div id="wheat"></div></center></div>
+				<div class="container"><img src="img/cheese.png" alt="Cheese" style="border-radius:12px"><center><div id="cheese"></div></center></div>
+				<div class="container"><img src="img/wine.png" alt="Wine" style="border-radius:12px"><center><div id="wine"></div></center></div>
+				<div class="container"><img src="img/wool.png" alt="Wool" style="border-radius:12px"><center><div id="wool"></div></center></div>
+				<div class="container"><img src="img/silk.png" alt="Brocade/Silk" style="border-radius:12px"><center><div id="silk"></div></center></div>
+			</span>
+			
+			<h3>Seed the board with these goods:</h3>
+			<span class="goods_grid">
+				<div class="container"><img src="img/wheat.png" alt="Wheat" style="border-radius:12px"><center><div id="wheatB"></div></center></div>
+				<div class="container"><img src="img/cheese.png" alt="Cheese" style="border-radius:12px"><center><div id="cheeseB"></div></center></div>
+				<div class="container"><img src="img/wine.png" alt="Wine" style="border-radius:12px"><center><div id="wineB"></div></center></div>
+				<div class="container"><img src="img/wool.png" alt="Wool" style="border-radius:12px"><center><div id="woolB"></div></center></div>
+				<div class="container"><img src="img/silk.png" alt="Brocade/Silk" style="border-radius:12px"><center><div id="silkB"></div></center></div>
+			</span>
+			
+		</main>
+		<footer>
+		<p>Setup Helper: Matthew Canan 2020 -- "Orleans" © 2017 dlp games -- Game Design: Reiiner Stockhausen -- Art & Graphic Design: Klemens Franz</p>
+		</footer>
+		<script src="script.js"></script>
+	
+</html>
