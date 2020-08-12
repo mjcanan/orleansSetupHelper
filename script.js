@@ -15,12 +15,12 @@ function boardSetup(removed,n) {
   let arr = [0,0,0,0,0];
   let spaces;
   
-  if (n===0){			// 4 Player Game = 51 spaces
-    spaces = 51;
-  } else if (n===1) {	// 2 Player Game = 42 spaces
-    spaces = 42;
+  if (n===0){			// 4 Player Game = 52 spaces
+    spaces = 52;
+  } else if (n===1) {	// 2 Player Game = 43 spaces
+    spaces = 43;
   }	else {
-    spaces = 47;		// 3 Player game = 47 spaces
+    spaces = 48;		// 3 Player game = 48 spaces
   }
   
   for (i = 0; i < spaces; i++){
