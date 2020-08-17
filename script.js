@@ -84,32 +84,47 @@ function getRemoved(num){
   };
   let i;
   let x = 0;
-  let j;
+    let j;
   let cTiles = document.getElementsByClassName("charTile");
-  let cTiles2 = document.getElementsByClassName("charTile2");
+    let cTiles2 = document.getElementsByClassName("charTile2");
+    let cTiles5Player = 0;
+    let cTiles5Player2 = 0;
+    let checkbox = document.getElementById("5player");
+
+    if (checkbox.checked) {
+        cTiles5Player = 2;
+        cTiles5Player2 = 3;
+    }
+    else {
+        cTiles5player = 0;
+        ctiles5player2 = 0;
+    }
   
 		//calculating the character tiles to remove
-  
+    console.log(cTiles5Player)
+    console.log(cTiles5Player2)
+
+
   if(num === 0){								// 4 player game	  
     for (j = 0; j < cTiles.length; j++) {
-      cTiles[j].innerHTML = 0;
+      cTiles[j].innerHTML = cTiles5Player;
 	}
     for (j = 0; j < cTiles2.length; j++) {
-      cTiles2[j].innerHTML = 0;
+      cTiles2[j].innerHTML = cTiles5Player2;
     }	  
   } else if (num === 1) {						// 2 player game	  
     for (j = 0; j < cTiles.length; j++) {
-      cTiles[j].innerHTML = 4;
+      cTiles[j].innerHTML = 4 + cTiles5Player;
     }
     for (j = 0; j < cTiles2.length; j++) {
-      cTiles2[j].innerHTML = 6;
+      cTiles2[j].innerHTML = 6 + cTiles5Player2;
     }
   } else {										// 3 player game	    
     for (j=0; j < cTiles.length; j++) {
-      cTiles[j].innerHTML = 2;
+      cTiles[j].innerHTML = 2 + cTiles5Player;
     }
     for (j=0; j <cTiles2.length; j++) {
-      cTiles2[j].innerHTML = 3;
+      cTiles2[j].innerHTML = 3 + cTiles5Player2;
     }
   } 
 		// calculating the goods to remove

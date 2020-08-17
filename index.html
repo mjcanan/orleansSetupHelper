@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -14,7 +14,15 @@
 		</header>
 		<main>
 			<h2><u>Description</u></h2>
-			<p>This page will give you a randomized setup based on your player count.</p>
+			<p>This page will give you a randomized setup based on your player count.  <b>If you have incorporated all of the tiles from the 5 player expansion</b>,
+			then you will have to remove additional tiles.  Select the option for the 5 player expansion below to account for the additional tiles.</p>
+
+			<div>
+				<label>
+					<input type="checkbox" id="5player">
+					<span>Add 5 Player Tiles</span>
+				</label>
+			</div>
 			
 			<center><div>
 			  <button onmouseover='style="color:teal"'; onmouseout='style="color:white"'; onclick="getRemoved(1)">2 Players</button>
