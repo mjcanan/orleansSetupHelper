@@ -14,13 +14,15 @@
 		</header>
 		<main>
 			<h2><u>Description</u></h2>
-			<p>This page will give you a randomized setup based on your player count.  <b>If you have incorporated all of the tiles from the 5 player expansion</b>,
-			then you will have to remove additional tiles.  Select the option for the 5 player expansion below to account for the additional tiles.</p>
+			<p>This page will give you a randomized setup based on your player count.  <b>If you have incorporated all of the tiles from the 5 player expansion
+			into the base game</b>, then you will have to remove additional tiles.  Select the option for the 5 player expansion below to account for the 
+			additional tiles.</p>
 
 			<div>
-				<label>
-					<input type="checkbox" id="5player">
-					<span>Add 5 Player Tiles</span>
+				<label class="switch">
+					<input type="checkbox" id="fiveplayer">
+					<span class="slider round">
+					<div id="fplabel">Add 5 Player Tiles</div></span>
 				</label>
 			</div>
 			
@@ -32,22 +34,22 @@
 			
 			<h3>Remove the following character tiles from the game:</h3>
 			<span class="goods_grid">
-				<div class="container"><img src="img/farmers.png" alt="Farmers"><center><div class="charTile"></div></center></div>
-				<div class="container"><img src="img/craftsmen.png" alt="Craftsmen"><center><div class="charTile"></div></center></div>
-				<div class="container"><img src="img/traders.png" alt="Traders"><center><div class="charTile"></div></center></div>
-				<div class="container"><img src="img/boatmen.png" alt="Boatmen"><center><div class="charTile"></div></center></div>
-				<div class="container"><img src="img/knights.png" alt="Knights"><center><div class="charTile2"></div></center></div>
-				<div class="container"><img src="img/scholars.png" alt="Scholars"><center><div class="charTile2"></div></center></div>
-				<div class="container"><img src="img/monks.png" alt="Monks"><center><div class="charTile2"></div></center></div>
+				<div class="container"><img src="img/farmers.png" alt="Farmers"><center><div class="charTile" style="visibility:hidden">0</div></center></div>
+				<div class="container"><img src="img/craftsmen.png" alt="Craftsmen"><center><div class="charTile" style="visibility:hidden">0</div></center></div>
+				<div class="container"><img src="img/traders.png" alt="Traders"><center><div class="charTile" style="visibility:hidden">0</div></center></div>
+				<div class="container"><img src="img/boatmen.png" alt="Boatmen"><center><div class="charTile" style="visibility:hidden">0</div></center></div>
+				<div class="container"><img src="img/knights.png" alt="Knights"><center><div class="charTile2" style="visibility:hidden">0</div></center></div>
+				<div class="container"><img src="img/scholars.png" alt="Scholars"><center><div class="charTile2" style="visibility:hidden">0</div></center></div>
+				<div class="container"><img src="img/monks.png" alt="Monks"><center><div class="charTile2" style="visibility:hidden">0</div></center></div>
 			</span>
 
 			<h3>Remove the following goods from the game:</h3>
 			<span class="goods_grid">
-				<div class="container"><img src="img/wheat.png" alt="Wheat" style="border-radius:12px"><center><div id="wheat"></div></center></div>
-				<div class="container"><img src="img/cheese.png" alt="Cheese" style="border-radius:12px"><center><div id="cheese"></div></center></div>
-				<div class="container"><img src="img/wine.png" alt="Wine" style="border-radius:12px"><center><div id="wine"></div></center></div>
-				<div class="container"><img src="img/wool.png" alt="Wool" style="border-radius:12px"><center><div id="wool"></div></center></div>
-				<div class="container"><img src="img/silk.png" alt="Brocade/Silk" style="border-radius:12px"><center><div id="silk"></div></center></div>
+				<div class="container"><img src="img/wheat.png" alt="Wheat" style="border-radius:12px"><center><div id="wheat" style="visibility:hidden">0</div></center></div>
+				<div class="container"><img src="img/cheese.png" alt="Cheese" style="border-radius:12px"><center><div id="cheese" style="visibility:hidden">0</div></center></div>
+				<div class="container"><img src="img/wine.png" alt="Wine" style="border-radius:12px"><center><div id="wine" style="visibility:hidden">0</div></center></div>
+				<div class="container"><img src="img/wool.png" alt="Wool" style="border-radius:12px"><center><div id="wool" style="visibility:hidden">0</div></center></div>
+				<div class="container"><img src="img/silk.png" alt="Brocade/Silk" style="border-radius:12px"><center><div id="silk" style="visibility:hidden">0</div></center></div>
 			</span>
 			
 			<h3>Seed the board with these goods:</h3>
