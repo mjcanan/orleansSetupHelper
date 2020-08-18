@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="description" content="Orleans Setup Helper - Generate a Random Board State">
@@ -9,11 +9,11 @@
 	</head>
 	<body>
 		<header>
-			<center><img src="img/header.png"></center>
-			<center><h1>Setup Helper</h1></center>
+			<img src="img/header.png" alt="Orleans" style="display:block;margin:0 auto">
+			<h1 style="text-align:center">Setup Helper</h1>
 		</header>
 		<main>
-			<h2><u>Description</u></h2>
+			<h2>Description:</h2>
 			<p>This page will give you a randomized setup based on your player count.  <b>If you have incorporated all of the tiles from the 5 player expansion
 			into the base game</b>, then you will have to remove additional tiles.  Select the option for the 5 player expansion below to account for the 
 			additional tiles.</p>
@@ -22,50 +22,50 @@
 				<label class="switch">
 					<input type="checkbox" id="fiveplayer">
 					<span class="slider round">
-					<div id="fplabel">Add 5 Player Tiles</div></span>
+					<span id="fplabel">Add 5 Player Tiles</span></span>
 				</label>
 			</div>
 			
-			<center><div>
+			<div style="text-align:center">
 			  <button onmouseover='style="color:teal"'; onmouseout='style="color:white"'; onclick="getRemoved(1)">2 Players</button>
 			  <button onmouseover='style="color:teal"'; onmouseout='style="color:white"'; onclick="getRemoved(2)">3 Players</button>
 			  <button onmouseover='style="color:teal"'; onmouseout='style="color:white"'; onclick="getRemoved(0)">4 Players</button><br><br>
-			</div></center>
+			</div>
 			
 			<h3>Remove the following character tiles from the game:</h3>
-			<span class="goods_grid">
-				<div class="container"><img src="img/farmers.png" alt="Farmers"><center><div class="charTile" style="visibility:hidden">0</div></center></div>
-				<div class="container"><img src="img/craftsmen.png" alt="Craftsmen"><center><div class="charTile" style="visibility:hidden">0</div></center></div>
-				<div class="container"><img src="img/traders.png" alt="Traders"><center><div class="charTile" style="visibility:hidden">0</div></center></div>
-				<div class="container"><img src="img/boatmen.png" alt="Boatmen"><center><div class="charTile" style="visibility:hidden">0</div></center></div>
-				<div class="container"><img src="img/knights.png" alt="Knights"><center><div class="charTile2" style="visibility:hidden">0</div></center></div>
-				<div class="container"><img src="img/scholars.png" alt="Scholars"><center><div class="charTile2" style="visibility:hidden">0</div></center></div>
-				<div class="container"><img src="img/monks.png" alt="Monks"><center><div class="charTile2" style="visibility:hidden">0</div></center></div>
-				<div class="container" id="ftech"  style="display:none"><img src="img/tech.png" alt="Tech"><center><div id="technum"></div></center></div>
-			</span>
+			<div class="goods_grid">
+				<div class="container"><img src="img/farmers.png" alt="Farmers"><div class="charTile" style="visibility:hidden">0</div></div>
+				<div class="container"><img src="img/craftsmen.png" alt="Craftsmen"><div class="charTile" style="visibility:hidden">0</div></div>
+				<div class="container"><img src="img/traders.png" alt="Traders"><div class="charTile" style="visibility:hidden">0</div></div>
+				<div class="container"><img src="img/boatmen.png" alt="Boatmen"><div class="charTile" style="visibility:hidden">0</div></div>
+				<div class="container"><img src="img/knights.png" alt="Knights"><div class="charTile2" style="visibility:hidden">0</div></div>
+				<div class="container"><img src="img/scholars.png" alt="Scholars"><div class="charTile2" style="visibility:hidden">0</div></div>
+				<div class="container"><img src="img/monks.png" alt="Monks"><div class="charTile2" style="visibility:hidden">0</div></div>
+				<div class="container" id="ftech" style="display:none"><img src="img/tech.png" alt="Tech"><div id="technum"></div></div>
+			</div>
 
 			<h3>Remove the following goods from the game:</h3>
-			<span class="goods_grid">
-				<div class="container"><img src="img/wheat.png" alt="Wheat" style="border-radius:12px"><center><div id="wheat" style="visibility:hidden">0</div></center></div>
-				<div class="container"><img src="img/cheese.png" alt="Cheese" style="border-radius:12px"><center><div id="cheese" style="visibility:hidden">0</div></center></div>
-				<div class="container"><img src="img/wine.png" alt="Wine" style="border-radius:12px"><center><div id="wine" style="visibility:hidden">0</div></center></div>
-				<div class="container"><img src="img/wool.png" alt="Wool" style="border-radius:12px"><center><div id="wool" style="visibility:hidden">0</div></center></div>
-				<div class="container"><img src="img/silk.png" alt="Brocade/Silk" style="border-radius:12px"><center><div id="silk" style="visibility:hidden">0</div></center></div>
-			</span>
+			<div class="goods_grid">
+				<div class="container"><img src="img/wheat.png" alt="Wheat" style="border-radius:12px"><div id="wheat" style="visibility:hidden">0</div></div>
+				<div class="container"><img src="img/cheese.png" alt="Cheese" style="border-radius:12px"><div id="cheese" style="visibility:hidden">0</div></div>
+				<div class="container"><img src="img/wine.png" alt="Wine" style="border-radius:12px"><div id="wine" style="visibility:hidden">0</div></div>
+				<div class="container"><img src="img/wool.png" alt="Wool" style="border-radius:12px"><div id="wool" style="visibility:hidden">0</div></div>
+				<div class="container"><img src="img/silk.png" alt="Brocade/Silk" style="border-radius:12px"><div id="silk" style="visibility:hidden">0</div></div>
+			</div>
 			
 			<h3>Seed the board with these goods:</h3>
-			<span class="goods_grid">
-				<div class="container"><img src="img/wheat.png" alt="Wheat" style="border-radius:12px"><center><div id="wheatB"></div></center></div>
-				<div class="container"><img src="img/cheese.png" alt="Cheese" style="border-radius:12px"><center><div id="cheeseB"></div></center></div>
-				<div class="container"><img src="img/wine.png" alt="Wine" style="border-radius:12px"><center><div id="wineB"></div></center></div>
-				<div class="container"><img src="img/wool.png" alt="Wool" style="border-radius:12px"><center><div id="woolB"></div></center></div>
-				<div class="container"><img src="img/silk.png" alt="Brocade/Silk" style="border-radius:12px"><center><div id="silkB"></div></center></div>
-			</span>
+			<div class="goods_grid">
+				<div class="container"><img src="img/wheat.png" alt="Wheat" style="border-radius:12px"><div id="wheatB"></div></div>
+				<div class="container"><img src="img/cheese.png" alt="Cheese" style="border-radius:12px"><div id="cheeseB"></div></div>
+				<div class="container"><img src="img/wine.png" alt="Wine" style="border-radius:12px"><div id="wineB"></div></div>
+				<div class="container"><img src="img/wool.png" alt="Wool" style="border-radius:12px"><div id="woolB"></div></div>
+				<div class="container"><img src="img/silk.png" alt="Brocade/Silk" style="border-radius:12px"><div id="silkB"></div></div>
+			</div>
 			
 		</main>
 		<footer>
 		<p>Setup Helper: Matthew Canan 2020 -- "Orleans" © 2017 dlp games -- Game Design: Reiiner Stockhausen -- Art & Graphic Design: Klemens Franz</p>
 		</footer>
 		<script src="script.js"></script>
-	
+	</body>
 </html>

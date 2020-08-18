@@ -7,7 +7,17 @@
   padding: 5px;
   margin: 5px;
   position: relative;
+  text-align: center;
   }
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+.charTile, .charTile2 {
+	text-align: center;
+}
 
 button {
 	background-color:rgb(224,201,97);
@@ -17,7 +27,7 @@ button {
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
-	display: in-line;
+	display: inline;
 	font-size: 16px;
 	margin: 5px;
 	cursor: pointer;
@@ -37,7 +47,7 @@ body {
 }
 
 footer {
-	font-size:8px;
+	font-size:12px;
 }
 
 /*Source for switch: https://www.w3schools.com/howto/howto_css_switch.asp */
@@ -49,11 +59,11 @@ footer {
 }
 
 .switch input {
+	-webkit-appearance:none; 
 	opacity: 0;
 	width: 0;
 	height: 0;
 }
-
 
 .slider {
 	position: absolute;
