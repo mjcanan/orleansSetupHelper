@@ -105,10 +105,14 @@ function getRemoved(num){
     if (checkbox.checked) {
         cTiles5Player = 2;
         cTiles5Player2 = 3;
+        document.getElementById("ftech").style.display = "block";
+        document.getElementById("technum").innerHTML = 4;
     }
     else {
         cTiles5player = 0;
         ctiles5player2 = 0;
+        document.getElementById("ftech").style.display = "none";
+        document.getElementById("technum").innerHTML = "";
     }
 
 	//calculating the character tiles to remove
